@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "react-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,9 +11,10 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
+    "bootstrap": "^5.3.8",
     "react": "^19.2.8",
+    "react-bootstrap": "^2.10.10",
     "react-dom": "^19.2.8",
-    "react-router": "^8.4.0",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
