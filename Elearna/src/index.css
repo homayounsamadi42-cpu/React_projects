@@ -1,0 +1,125 @@
+
+@import "tailwindcss";
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172d32;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --elearna-dark: #062b30;
+  --elearna-yellow: #ffb900;
+  --elearna-text: #172d32;
+  --elearna-muted: #70777a;
+  --elearna-border: #e8ebeb;
+  --container-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: inherit;
+}
+
+::selection {
+  color: var(--elearna-dark);
+  background: var(--elearna-yellow);
+}
+
+.container-site {
+  width: min(
+    var(--container-width),
+    calc(100% - 40px)
+  );
+  margin-inline: auto;
+}
+
+.section-padding {
+  padding-block: 88px;
+}
+
+.section-eyebrow {
+  margin: 0 0 12px;
+  color: var(--elearna-yellow);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin: 0;
+  color: var(--elearna-text);
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.section-description {
+  color: var(--elearna-muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+@media (max-width: 640px) {
+  .container-site {
+    width: calc(100% - 32px);
+  }
+
+  .section-padding {
+    padding-block: 56px;
+  }
+}
+
